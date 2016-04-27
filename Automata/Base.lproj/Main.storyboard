@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E2066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Automata View Controller-->
@@ -16,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRw-27-EHT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QRw-27-EHT">
                                 <rect key="frame" x="282" y="526" width="22" height="22"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -25,18 +27,10 @@
                                     <segue destination="4s2-Uw-PeR" kind="presentation" modalTransitionStyle="flipHorizontal" id="Ube-Bi-Y06"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j2Q-co-Lcb">
-                                <rect key="frame" x="16" y="20" width="288" height="442"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="j2Q-co-Lcb">
+                                <rect key="frame" x="16" y="20" width="288" height="463"/>
                             </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oCj-hZ-TFd">
-                                <rect key="frame" x="83" y="492" width="155" height="29"/>
-                                <segments>
-                                    <segment title="Red"/>
-                                    <segment title="Green"/>
-                                    <segment title="Blue"/>
-                                </segments>
-                            </segmentedControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGB-3D-QVX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGB-3D-QVX">
                                 <rect key="frame" x="16" y="491" width="37" height="30"/>
                                 <state key="normal" title="Clear">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -45,8 +39,97 @@
                                     <action selector="clear" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vu9-du-9Xg"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oCj-hZ-TFd">
+                                <rect key="frame" x="83" y="492" width="155" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="Zea-6Y-rsg"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Red"/>
+                                    <segment title="Green"/>
+                                    <segment title="Blue"/>
+                                </segments>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Zea-6Y-rsg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Zea-6Y-rsg"/>
+                                    </mask>
+                                </variation>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nGB-3D-QVX" firstAttribute="centerY" secondItem="oCj-hZ-TFd" secondAttribute="centerY" id="0FO-K4-wlO"/>
+                            <constraint firstItem="j2Q-co-Lcb" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="28O-Wc-nsE"/>
+                            <constraint firstItem="j2Q-co-Lcb" firstAttribute="centerX" secondItem="oCj-hZ-TFd" secondAttribute="centerX" id="3wa-6Q-61I"/>
+                            <constraint firstItem="j2Q-co-Lcb" firstAttribute="leading" secondItem="nGB-3D-QVX" secondAttribute="leading" id="71r-y4-8ET"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QRw-27-EHT" secondAttribute="bottom" constant="20" id="7CJ-B1-8CN"/>
+                            <constraint firstItem="j2Q-co-Lcb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Czk-uh-ZgY"/>
+                            <constraint firstAttribute="bottom" secondItem="QRw-27-EHT" secondAttribute="bottom" constant="20" symbolic="YES" id="L2b-Ib-QuP"/>
+                            <constraint firstItem="oCj-hZ-TFd" firstAttribute="leading" secondItem="nGB-3D-QVX" secondAttribute="trailing" constant="30" id="Rfu-ke-XHX"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="oCj-hZ-TFd" secondAttribute="bottom" constant="48" id="WJQ-FT-JlH"/>
+                            <constraint firstItem="oCj-hZ-TFd" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Xpx-HY-raJ"/>
+                            <constraint firstItem="nGB-3D-QVX" firstAttribute="top" secondItem="j2Q-co-Lcb" secondAttribute="bottom" constant="8" id="bzd-b0-y0C"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="j2Q-co-Lcb" secondAttribute="trailing" constant="-4" id="daA-kC-cP3"/>
+                            <constraint firstItem="j2Q-co-Lcb" firstAttribute="trailing" secondItem="QRw-27-EHT" secondAttribute="trailing" id="fvU-4m-NyQ"/>
+                            <constraint firstItem="nGB-3D-QVX" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-4" id="hzr-7z-HBp"/>
+                            <constraint firstItem="oCj-hZ-TFd" firstAttribute="top" secondItem="j2Q-co-Lcb" secondAttribute="bottom" constant="9" id="i5c-SN-ysF"/>
+                            <constraint firstItem="oCj-hZ-TFd" firstAttribute="leading" secondItem="nGB-3D-QVX" secondAttribute="trailing" constant="30" id="ipl-z0-FVC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QRw-27-EHT" secondAttribute="trailing" constant="-4" id="l6J-bJ-qGz"/>
+                            <constraint firstItem="QRw-27-EHT" firstAttribute="top" secondItem="j2Q-co-Lcb" secondAttribute="bottom" constant="43" id="sNF-ux-zVx"/>
+                            <constraint firstItem="nGB-3D-QVX" firstAttribute="top" secondItem="j2Q-co-Lcb" secondAttribute="bottom" constant="8" symbolic="YES" id="t0D-8H-PVx"/>
+                            <constraint firstItem="j2Q-co-Lcb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-4" id="tXo-z0-Kk8"/>
+                            <constraint firstItem="j2Q-co-Lcb" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="v1f-Ep-S3J"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="nGB-3D-QVX" secondAttribute="bottom" constant="47" id="xPD-s8-W5V"/>
+                            <constraint firstItem="j2Q-co-Lcb" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="y8Y-Vz-PsX"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="daA-kC-cP3"/>
+                                <exclude reference="tXo-z0-Kk8"/>
+                                <exclude reference="y8Y-Vz-PsX"/>
+                                <exclude reference="bzd-b0-y0C"/>
+                                <exclude reference="hzr-7z-HBp"/>
+                                <exclude reference="Rfu-ke-XHX"/>
+                                <exclude reference="Xpx-HY-raJ"/>
+                                <exclude reference="i5c-SN-ysF"/>
+                                <exclude reference="7CJ-B1-8CN"/>
+                                <exclude reference="WJQ-FT-JlH"/>
+                                <exclude reference="xPD-s8-W5V"/>
+                                <exclude reference="l6J-bJ-qGz"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="28O-Wc-nsE"/>
+                                <exclude reference="3wa-6Q-61I"/>
+                                <exclude reference="71r-y4-8ET"/>
+                                <exclude reference="Czk-uh-ZgY"/>
+                                <include reference="daA-kC-cP3"/>
+                                <exclude reference="fvU-4m-NyQ"/>
+                                <include reference="tXo-z0-Kk8"/>
+                                <exclude reference="v1f-Ep-S3J"/>
+                                <include reference="y8Y-Vz-PsX"/>
+                                <exclude reference="0FO-K4-wlO"/>
+                                <include reference="bzd-b0-y0C"/>
+                                <include reference="hzr-7z-HBp"/>
+                                <exclude reference="t0D-8H-PVx"/>
+                                <include reference="Rfu-ke-XHX"/>
+                                <include reference="Xpx-HY-raJ"/>
+                                <include reference="i5c-SN-ysF"/>
+                                <exclude reference="ipl-z0-FVC"/>
+                                <include reference="7CJ-B1-8CN"/>
+                                <include reference="WJQ-FT-JlH"/>
+                                <include reference="xPD-s8-W5V"/>
+                                <exclude reference="L2b-Ib-QuP"/>
+                                <include reference="l6J-bJ-qGz"/>
+                                <exclude reference="sNF-ux-zVx"/>
+                            </mask>
+                        </variation>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -57,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="311" y="447"/>
+            <point key="canvasLocation" x="310.5" y="447"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="5aQ-DC-2Tn">
@@ -86,7 +169,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="There is nothing here!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="la6-bR-OWk">
                                 <rect key="frame" x="77" y="273" width="166" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

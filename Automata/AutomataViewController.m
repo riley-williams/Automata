@@ -26,7 +26,7 @@
 	
 	self.width = self.imageView.frame.size.width/res;
 	self.height = self.imageView.frame.size.height/res;
-	
+
 	self.data = malloc(3*self.width*self.height);
 	self.buf = malloc(3*self.width*self.height);
 	self.lvl = malloc(self.width*self.height);
@@ -40,6 +40,8 @@
 	}
 	
 	self.isIntegrating = NO;
+	
+	//self.imageView.contentMode = UIViewContentModeCenter;
 	
 	NSTimer *update = [NSTimer timerWithTimeInterval:1.0/30 target:self selector:@selector(updatePixels) userInfo:nil repeats:YES];
 	[[NSRunLoop currentRunLoop] addTimer:update forMode:NSRunLoopCommonModes];
