@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF0CA5C11A00F79500600DDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0CA5C01A00F79500600DDA /* main.m */; };
+		BF0CA5C41A00F79500600DDA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0CA5C31A00F79500600DDA /* AppDelegate.m */; };
+		BF0CA5C71A00F79500600DDA /* AutomataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0CA5C61A00F79500600DDA /* AutomataViewController.m */; };
+		BF0CA5CA1A00F79500600DDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0CA5C81A00F79500600DDA /* Main.storyboard */; };
+		BF0CA5CC1A00F79500600DDA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF0CA5CB1A00F79500600DDA /* Images.xcassets */; };
+		BF0CA5CF1A00F79500600DDA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF0CA5CD1A00F79500600DDA /* LaunchScreen.xib */; };
+		BF0CA5DB1A00F79500600DDA /* AutomataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0CA5DA1A00F79500600DDA /* AutomataTests.m */; };
+		BF0CA5E61A00F7D900600DDA /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0CA5E51A00F7D900600DDA /* SettingsViewController.m */; };
+		BF0CA5E91A00FA6900600DDA /* AutomataView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0CA5E81A00FA6900600DDA /* AutomataView.m */; };
+		BF0CA5EC1A00FB5900600DDA /* Grid.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0CA5EB1A00FB5900600DDA /* Grid.m */; };
+		BF0CA5EF1A00FB7300600DDA /* CellShader.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0CA5EE1A00FB7300600DDA /* CellShader.m */; };
+		BF0CA5F21A00FB8A00600DDA /* CellAlgorithm.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0CA5F11A00FB8A00600DDA /* CellAlgorithm.m */; };
+		BF0CA5F41A01010000600DDA /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0CA5F31A01010000600DDA /* CoreImage.framework */; };
+		BF0CA5F61A0101AF00600DDA /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0CA5F51A0101AF00600DDA /* OpenGLES.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF0CA5D51A00F79500600DDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF0CA5B31A00F79500600DDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF0CA5BA1A00F79500600DDA;
+			remoteInfo = Automata;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF0CA5BB1A00F79500600DDA /* Automata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Automata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0CA5BF1A00F79500600DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0CA5C01A00F79500600DDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF0CA5C21A00F79500600DDA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BF0CA5C31A00F79500600DDA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BF0CA5C51A00F79500600DDA /* AutomataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutomataViewController.h; sourceTree = "<group>"; };
+		BF0CA5C61A00F79500600DDA /* AutomataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutomataViewController.m; sourceTree = "<group>"; };
+		BF0CA5C91A00F79500600DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF0CA5CB1A00F79500600DDA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF0CA5CE1A00F79500600DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BF0CA5D41A00F79500600DDA /* AutomataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutomataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0CA5D91A00F79500600DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF0CA5DA1A00F79500600DDA /* AutomataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutomataTests.m; sourceTree = "<group>"; };
+		BF0CA5E41A00F7D900600DDA /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		BF0CA5E51A00F7D900600DDA /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		BF0CA5E71A00FA6900600DDA /* AutomataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutomataView.h; sourceTree = "<group>"; };
+		BF0CA5E81A00FA6900600DDA /* AutomataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutomataView.m; sourceTree = "<group>"; };
+		BF0CA5EA1A00FB5900600DDA /* Grid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grid.h; sourceTree = "<group>"; };
+		BF0CA5EB1A00FB5900600DDA /* Grid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grid.m; sourceTree = "<group>"; };
+		BF0CA5ED1A00FB7300600DDA /* CellShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellShader.h; sourceTree = "<group>"; };
+		BF0CA5EE1A00FB7300600DDA /* CellShader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellShader.m; sourceTree = "<group>"; };
+		BF0CA5F01A00FB8A00600DDA /* CellAlgorithm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellAlgorithm.h; sourceTree = "<group>"; };
+		BF0CA5F11A00FB8A00600DDA /* CellAlgorithm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellAlgorithm.m; sourceTree = "<group>"; };
+		BF0CA5F31A01010000600DDA /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		BF0CA5F51A0101AF00600DDA /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF0CA5B81A00F79500600DDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0CA5F61A0101AF00600DDA /* OpenGLES.framework in Frameworks */,
+				BF0CA5F41A01010000600DDA /* CoreImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0CA5D11A00F79500600DDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF0CA5B21A00F79500600DDA = {
+			isa = PBXGroup;
+			children = (
+				BF0CA5BD1A00F79500600DDA /* Automata */,
+				BF0CA5D71A00F79500600DDA /* AutomataTests */,
+				BF0CA5BC1A00F79500600DDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF0CA5BC1A00F79500600DDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF0CA5BB1A00F79500600DDA /* Automata.app */,
+				BF0CA5D41A00F79500600DDA /* AutomataTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF0CA5BD1A00F79500600DDA /* Automata */ = {
+			isa = PBXGroup;
+			children = (
+				BF0CA5C21A00F79500600DDA /* AppDelegate.h */,
+				BF0CA5C31A00F79500600DDA /* AppDelegate.m */,
+				BF0CA5E71A00FA6900600DDA /* AutomataView.h */,
+				BF0CA5E81A00FA6900600DDA /* AutomataView.m */,
+				BF0CA5C51A00F79500600DDA /* AutomataViewController.h */,
+				BF0CA5C61A00F79500600DDA /* AutomataViewController.m */,
+				BF0CA5EA1A00FB5900600DDA /* Grid.h */,
+				BF0CA5EB1A00FB5900600DDA /* Grid.m */,
+				BF0CA5ED1A00FB7300600DDA /* CellShader.h */,
+				BF0CA5EE1A00FB7300600DDA /* CellShader.m */,
+				BF0CA5F01A00FB8A00600DDA /* CellAlgorithm.h */,
+				BF0CA5F11A00FB8A00600DDA /* CellAlgorithm.m */,
+				BF0CA5E41A00F7D900600DDA /* SettingsViewController.h */,
+				BF0CA5E51A00F7D900600DDA /* SettingsViewController.m */,
+				BF0CA5C81A00F79500600DDA /* Main.storyboard */,
+				BF0CA5CB1A00F79500600DDA /* Images.xcassets */,
+				BF0CA5CD1A00F79500600DDA /* LaunchScreen.xib */,
+				BF0CA5BE1A00F79500600DDA /* Supporting Files */,
+				BF0CA5F51A0101AF00600DDA /* OpenGLES.framework */,
+				BF0CA5F31A01010000600DDA /* CoreImage.framework */,
+			);
+			path = Automata;
+			sourceTree = "<group>";
+		};
+		BF0CA5BE1A00F79500600DDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF0CA5BF1A00F79500600DDA /* Info.plist */,
+				BF0CA5C01A00F79500600DDA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF0CA5D71A00F79500600DDA /* AutomataTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF0CA5DA1A00F79500600DDA /* AutomataTests.m */,
+				BF0CA5D81A00F79500600DDA /* Supporting Files */,
+			);
+			path = AutomataTests;
+			sourceTree = "<group>";
+		};
+		BF0CA5D81A00F79500600DDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF0CA5D91A00F79500600DDA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF0CA5BA1A00F79500600DDA /* Automata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0CA5DE1A00F79500600DDA /* Build configuration list for PBXNativeTarget "Automata" */;
+			buildPhases = (
+				BF0CA5B71A00F79500600DDA /* Sources */,
+				BF0CA5B81A00F79500600DDA /* Frameworks */,
+				BF0CA5B91A00F79500600DDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Automata;
+			productName = Automata;
+			productReference = BF0CA5BB1A00F79500600DDA /* Automata.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF0CA5D31A00F79500600DDA /* AutomataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF0CA5E11A00F79500600DDA /* Build configuration list for PBXNativeTarget "AutomataTests" */;
+			buildPhases = (
+				BF0CA5D01A00F79500600DDA /* Sources */,
+				BF0CA5D11A00F79500600DDA /* Frameworks */,
+				BF0CA5D21A00F79500600DDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF0CA5D61A00F79500600DDA /* PBXTargetDependency */,
+			);
+			name = AutomataTests;
+			productName = AutomataTests;
+			productReference = BF0CA5D41A00F79500600DDA /* AutomataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF0CA5B31A00F79500600DDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Riley Williams";
+				TargetAttributes = {
+					BF0CA5BA1A00F79500600DDA = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					BF0CA5D31A00F79500600DDA = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = BF0CA5BA1A00F79500600DDA;
+					};
+				};
+			};
+			buildConfigurationList = BF0CA5B61A00F79500600DDA /* Build configuration list for PBXProject "Automata" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF0CA5B21A00F79500600DDA;
+			productRefGroup = BF0CA5BC1A00F79500600DDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF0CA5BA1A00F79500600DDA /* Automata */,
+				BF0CA5D31A00F79500600DDA /* AutomataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF0CA5B91A00F79500600DDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0CA5CA1A00F79500600DDA /* Main.storyboard in Resources */,
+				BF0CA5CF1A00F79500600DDA /* LaunchScreen.xib in Resources */,
+				BF0CA5CC1A00F79500600DDA /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0CA5D21A00F79500600DDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF0CA5B71A00F79500600DDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0CA5C71A00F79500600DDA /* AutomataViewController.m in Sources */,
+				BF0CA5F21A00FB8A00600DDA /* CellAlgorithm.m in Sources */,
+				BF0CA5EC1A00FB5900600DDA /* Grid.m in Sources */,
+				BF0CA5C41A00F79500600DDA /* AppDelegate.m in Sources */,
+				BF0CA5E91A00FA6900600DDA /* AutomataView.m in Sources */,
+				BF0CA5EF1A00FB7300600DDA /* CellShader.m in Sources */,
+				BF0CA5C11A00F79500600DDA /* main.m in Sources */,
+				BF0CA5E61A00F7D900600DDA /* SettingsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF0CA5D01A00F79500600DDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF0CA5DB1A00F79500600DDA /* AutomataTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF0CA5D61A00F79500600DDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF0CA5BA1A00F79500600DDA /* Automata */;
+			targetProxy = BF0CA5D51A00F79500600DDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF0CA5C81A00F79500600DDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0CA5C91A00F79500600DDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF0CA5CD1A00F79500600DDA /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF0CA5CE1A00F79500600DDA /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF0CA5DC1A00F79500600DDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BF0CA5DD1A00F79500600DDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF0CA5DF1A00F79500600DDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Automata/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF0CA5E01A00F79500600DDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Automata/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BF0CA5E21A00F79500600DDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AutomataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Automata.app/Automata";
+			};
+			name = Debug;
+		};
+		BF0CA5E31A00F79500600DDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AutomataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Automata.app/Automata";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF0CA5B61A00F79500600DDA /* Build configuration list for PBXProject "Automata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0CA5DC1A00F79500600DDA /* Debug */,
+				BF0CA5DD1A00F79500600DDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0CA5DE1A00F79500600DDA /* Build configuration list for PBXNativeTarget "Automata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0CA5DF1A00F79500600DDA /* Debug */,
+				BF0CA5E01A00F79500600DDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF0CA5E11A00F79500600DDA /* Build configuration list for PBXNativeTarget "AutomataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF0CA5E21A00F79500600DDA /* Debug */,
+				BF0CA5E31A00F79500600DDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF0CA5B31A00F79500600DDA /* Project object */;
+}
